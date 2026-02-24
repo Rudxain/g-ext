@@ -4,4 +4,4 @@ git branch --no-color --merged |
     grep -vE "^(\*|\+)" |
     grep -v "$(git_extra_default_branch)" |
     grep -v svn |
-    xargs -r -n 1 git branch -d
+    xargs -r git branch -d
